@@ -1,0 +1,216 @@
+@media (max-width: 1239px) {
+    /* .header-nav {
+        display: none;
+    }
+    .header_navbar {
+        display: block;
+    } */
+    .header_navbar-btn {
+        display: block;
+    }
+    .header_navbar-input:checked ~ .header_navbar-overlay {
+        opacity: 1;
+        display: block;
+    }
+    .header-nav {
+        position: fixed;
+        z-index: 2001;
+        top: 10%;
+        left: 5%;
+        right: 5%;
+        opacity: 0;
+        height: 0;
+        transition: all ease-out 0.4s;
+        overflow-y: auto;
+    }
+    .header_navbar-input:checked ~ .header-nav {
+        height: 585px;
+        opacity: 1;
+    }
+    .header-nav_list {
+        width: 100%;
+        background-color: var(--white-color);
+    }
+    .header-nav_item {
+        display: block;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        height: auto;
+        background-color: var(--white-color);
+    }
+    .header-nav_item.header-nav_agent > a {
+        padding-left: 20px;
+    }
+    .header-nav_item--has-subnav::before,
+    .header-nav_item--has-subnav::after {
+        display: none;
+    }
+    .header-nav_link,
+    .header--white .header-nav_link {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 6rem;
+        text-transform: uppercase;
+        color: #999;
+        padding: 0 20px;
+    }
+    .header-nav_link:hover,
+    .header--white .header-nav_link:hover {
+        color: var(--white-color);
+        background-color: var(--main-color);
+    }
+    .header-nav_link > span {
+        padding: 5px 16px;
+        color: var(--white-color);
+    }
+    .header-nav_enquire span {
+        background-color: rgba(0,0,0,0.2);
+    }
+    .header-nav_search-wrap {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 100%;
+    }
+    .header-nav_search-input {
+        width: 100%;
+        padding: 12px 20px;
+        height: 58px;
+    }
+    .header-nav_search-btn {
+        padding: 0 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .header-nav_agent span {
+        background-color: var(--main-color);
+    }
+    .header-subnav {
+        position: relative;
+        z-index: 10;
+        top: 0;
+        left: 0 !important;
+        right: 0;
+        bottom: 0;
+        max-width: 100% !important;
+        overflow: auto;
+        opacity: 0;
+        visibility: visible;
+        height: 0;
+        padding: 0 20px;
+        border: none;
+        transition: all ease 0.3s;
+    }
+    .header-subnav.open-submenu {
+        opacity: 1;
+        height: 280px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .background_content-main > h1 {
+        font-size: 5.6rem;
+    }
+    .subscribe_noti input {
+        width: 400px;
+        font-size: 1.8rem;
+    }
+    .subscribe_noti button {
+        font-size: 1.8rem;
+    }
+    .footer_middle-section {
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .header {
+        padding: 0 10px;
+    }
+    .modal-agent_section {
+        padding: 10px;
+    }
+    .modal-agent_login-form {
+        padding: 0;
+    }
+    .modal-agent_register-toggle,
+    .modal-agent_links-title ~ span {
+        display: block;
+        margin-top: 5px;
+    }
+    .modal-agent_links-list {
+        text-align: center;
+    }
+    .modal-enquire_tab-btn,
+    .modal-agent_register-btn {
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 15px;
+    }
+    .background_content-main > h1 {
+        font-size: 4.6rem;
+    }
+    .background_content-main-box {
+        flex-direction: column;
+    }
+    .background_content-main-item {
+        margin-bottom: 10px;
+        width: 272px;
+    }
+    .background_content-contact-btn,
+    .background_content-letter-btn {
+        width: 100%;
+    }
+    .background_content-covid {
+        width: 120px;
+        height: 120px;
+    }
+    .fixed-box a {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+    .fixed-box-left {
+        left: -60px;
+    }
+    .fixed-box-right {
+        right: -76px;
+    }
+    .container_title,
+    .subscribe_title,
+    .responsible_item-name {
+        font-size: 2.6rem;
+    }
+    .container_description {
+        font-size: 2.2rem;
+    }
+    .obj-animate {
+        animation: obj-ani-1 25s infinite ease-out;
+    }
+    .obj-animate--white {
+        animation: obj-ani-2 25s infinite ease-out;
+    }
+    .our-asia_item-name {
+        font-size: 1.8rem;
+    }
+    .subscribe_noti input {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .subscribe_noti button {
+        font-size: 1.6rem;
+    } 
+    .footer_middle-section {
+        text-align: center;
+    }
+}
